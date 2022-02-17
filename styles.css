@@ -1,84 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 body{
     padding: 0;
     margin: 0;
     font-family: roboto, sans-serif;
+    background-color: #0E0e0e ;
+    min-height: 100vh;
 }
-.wrapper{
-    display:flex;
-    flex-flow: column wrap;
-    padding: 0px;
-    }
 
-.header{
+.header-container{
     display: flex;
-    background: #1f2937;
-    justify-content: space-between;
+    background-color: #1f2937;
     align-items: center;
-    height: 70px;
+    justify-content: space-between;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #f9faf8;
+    margin-left: 1rem;
+    height: 140px;
     
 }
 
 
-.headerLogo{
-    color: #f9faf8;
-    font-size: 24px;
-}
-.main{
-    background: #1f2937;
-}
-
-.main-nav ul {
+.header-nav ul{
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
-
+       
 }
 
-.main-nav a{
-    color: inherit;
+.header-nav a{
     text-decoration: none;
     padding: 1rem;
-}
-#heroMain{
-    color: #f9faf8;
-    font-size: 48px;
-
+    color: inherit;
 }
 
-#heroSecondary{
-    color: #e5e7eb;
-    font-size: 18px;
-
+.header-nav a:hover{
+    color: red;
 }
 
-#informationheader{
-    color: #1f2937;
-    font-weight: extra-bold;
+.main-container{
+    display: flex;
+    background-color: #1f2937;
+    align-items: stretch;
 }
 
-
-.quote{
-    background: #e5e7eb;
+.main-text{
+    display: flex;
     
 }
 
-#quoteText{
+.main-text h2{
+    padding: 1rem;
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.main-text p{
+    text-align: justify;
+}
+
+#hero-secondary{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.main-image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.random-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+.random-text{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+
+}
+
+.random-images{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    border: #3882f6;
+    
+}
+
+.quote-container{
+    display: flex;
+    background: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
+    font-weight: lighter;
 }
 
-.callToAction{
+.action-outer{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.action-inner{
+    display: flex;
     background-color: #3882f6;
     color: #e5e7eb;
 }
 
 .footer{
+    display: flex;
     background: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
     justify-content: center;
+}
+
+.btn{
+    background-color: #3882f6;
+}
+
+.class{
+    
+    border: 2px solid red;
+    text-align: center;
 }
